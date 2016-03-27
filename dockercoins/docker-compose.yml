@@ -32,7 +32,8 @@ webui:
     - "./webui/files/:/files/"
 
 redis:
-  image: redis
+  image: jpetazzo/hamba
+  command: 6379 0.0.0.0:32768
 
 worker:
   build: worker
