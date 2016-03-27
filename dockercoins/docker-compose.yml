@@ -33,7 +33,7 @@ webui:
 
 redis:
   image: jpetazzo/hamba
-  command: 6379 0.0.0.0:32768
+  command: 6379 172.17.0.1:32768
 
 worker:
   build: worker
